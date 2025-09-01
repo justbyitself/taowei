@@ -1,0 +1,1 @@
+export default (...numbers) => Math.max(...numbers)

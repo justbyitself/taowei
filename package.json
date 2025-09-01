@@ -1,0 +1,24 @@
+{
+  "name": "taowei",
+  "version": "0.1.0",
+  "description": "Functional, iterable-focused library",
+  "author": "justbyitself",
+  "email": "justbyitself@proton.me",
+  "license": "ISC",
+  "keywords": [
+    "iterable",
+    "functional",
+    "utils",
+    "tools"
+  ],
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest --run",
+    "coverage": "vitest run --coverage --run"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^3.2.4",
+    "vitest": "^3.2.4"
+  }
+}

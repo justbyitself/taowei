@@ -1,0 +1,1 @@
+export default from => to => n => n >= from && n <= to
