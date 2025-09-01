@@ -34,7 +34,7 @@ npm install taowei
 Let's get the first items of Fibonacci sequence:
 
 ```js
-import { withPrevious, take, repeat, sum, toArray } from 'taowei'
+import { withPrevious, take, repeat, sum } from 'taowei'
 
 const fibonacci = withPrevious(2)(0, 1, repeat(sum))
 console.log(...take(10)(fibonacci))
