@@ -9,10 +9,20 @@
     "iterable",
     "functional",
     "utils",
-    "tools"
+    "tools",
+    "fp",
+    "functional-programming",
+    "javascript",
+    "typescript",
+    "iterator",
+    "composition",
+    "utility-functions"
   ],
   "type": "module",
-  "main": "index.js",
+  "files": [
+    "src"
+  ],
+  "main": "src/index.js",
   "scripts": {
     "test": "vitest --run",
     "coverage": "vitest run --coverage --run"
