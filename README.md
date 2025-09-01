@@ -21,6 +21,28 @@ This library provides a set of utilities that make working with iterables and fu
 - Currying and function composition support
 - Sequence generation tools
 
+## Installation
+
+Install Taowei using npm:
+
+```bash
+npm install taowei
+```
+
+## Example
+
+Let's get the first items of Fibonacci sequence:
+
+```js
+import { withPrevious, take, repeat, sum, toArray } from 'taowei'
+
+const fibonacci = withPrevious(2)(0, 1, repeat(sum))
+console.log(...take(10)(fibonacci))
+```
+
+For more advanced usage and examples, check out the [integration tests](https://github.com/justbyitself/taowei/tree/main/test/integration).
+
+
 ## Testing
 
 To run tests, use:
