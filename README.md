@@ -1,6 +1,6 @@
 <div align="center">
-  <a href="https://github.com/yourusername/taowei">
-    <img src="logo.svg" alt="Taowei logo" width="300"/>
+  <a href="https://github.com/justbyitself/taowei">
+    <img src="https://raw.githubusercontent.com/justbyitself/taowei/main/logo.svg" alt="Taowei logo" width="300"/>
   </a>
   
   **🚧 Work In Progress (WIP) 🚧**
