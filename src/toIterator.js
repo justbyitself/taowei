@@ -1,3 +1,3 @@
-import concat from './concat'
+import concat from './concat.js'
 
 export default concat

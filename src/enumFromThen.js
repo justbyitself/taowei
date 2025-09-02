@@ -1,5 +1,5 @@
-import iterate from './iterate'
-import add from './add'
+import iterate from './iterate.js'
+import add from './add.js'
 
 export default from => then => iterate(add(then - from))(from)
 

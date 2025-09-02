@@ -1,5 +1,5 @@
-import iterate from './iterate'
-import succ from './succ'
+import iterate from './iterate.js'
+import succ from './succ.js'
 
 export default iterate(succ)
 

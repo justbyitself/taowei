@@ -1,4 +1,4 @@
-import iterate from './iterate'
-import always from './always'
+import iterate from './iterate.js'
+import always from './always.js'
 
 export default x => iterate(always(x))(x)

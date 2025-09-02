@@ -1,5 +1,5 @@
-import fold from './fold'
-import add from './add'
-import uncurry from './uncurry'
+import fold from './fold.js'
+import add from './add.js'
+import uncurry from './uncurry.js'
 
 export default fold(uncurry(add))(0)

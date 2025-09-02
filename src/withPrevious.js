@@ -1,5 +1,5 @@
-import toFunction from './toFunction'
-import concat from './concat'
+import toFunction from './toFunction.js'
+import concat from './concat.js'
 
 export default (n = Infinity) => (...args) => {
   const iterator = Iterator.from(concat(...args))

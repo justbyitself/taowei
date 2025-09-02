@@ -1,3 +1,3 @@
-import join from './join'
+import join from './join.js'
 
 export default join(' ')

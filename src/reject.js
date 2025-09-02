@@ -1,4 +1,4 @@
-import not from './not'
-import filter from './filter'
+import not from './not.js'
+import filter from './filter.js'
 
 export default predicate => filter(not(predicate))

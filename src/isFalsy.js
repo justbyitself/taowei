@@ -1,5 +1,5 @@
-import isTruthy from './isTruthy'
-import not from './not'
+import isTruthy from './isTruthy.js'
+import not from './not.js'
 
 export default not(isTruthy)
 

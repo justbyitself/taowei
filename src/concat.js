@@ -1,5 +1,5 @@
-import isIterable from './isIterable'
-import isString from './isString'
+import isIterable from './isIterable.js'
+import isString from './isString.js'
 
 export default (...args) => (function* () {
   for (const arg of args) {

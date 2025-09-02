@@ -1,6 +1,6 @@
-import toMap from './toMap'
-import isFunction from './isFunction'
-import isEqualTo from './isEqualTo'
+import toMap from './toMap.js'
+import isFunction from './isFunction.js'
+import isEqualTo from './isEqualTo.js'
 
 export default (...predicates) => v => {
   const map = toMap(...predicates)

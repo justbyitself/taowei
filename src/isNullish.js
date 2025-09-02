@@ -1,4 +1,4 @@
-import isLooselyEqualTo from './isLooselyEqualTo'
+import isLooselyEqualTo from './isLooselyEqualTo.js'
 
 export default isLooselyEqualTo(null)
 

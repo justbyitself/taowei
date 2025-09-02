@@ -1,5 +1,5 @@
-import isPojo from './isPojo'
-import isArray from './isArray'
+import isPojo from './isPojo.js'
+import isArray from './isArray.js'
 
 export default (...args) => {
   const itemToMap = v => {

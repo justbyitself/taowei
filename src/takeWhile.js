@@ -1,4 +1,4 @@
-import concat from './concat'
+import concat from './concat.js'
 
 export default predicate => (...args) => function* () {
   const iterator = Iterator.from(concat(...args))
