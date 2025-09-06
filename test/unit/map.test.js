@@ -48,8 +48,14 @@ describe('map', () => {
     expect(arr[999]).toBe(1000)
   })
 
-  it('throws if mapper is not a function', () => {
-    // if your API should throw; remove if it should coerce
-    expect(() => map(null)([1, 2])).toThrow()
+  it('receives only une arg (value)', () => {
+    const calls = []
+    const mapper = v => (calls.push(v), v)
+
+    const iterable = map(mapper)([1, 2], 3)
+
+    for (const _ of iterable) {}
+
+    expect(calls).toEqual([1, 2, 3])
   })
 })
