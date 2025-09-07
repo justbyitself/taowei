@@ -9,7 +9,7 @@ Concatenates values and iterable/iterator sources into a single iterable.
 - Concatenates values and sources into a single lazy iterable.
 - Treats strings as single values (not iterated).
 - Consumes next-only iterators via an internal adapter that calls `return()` on cleanup when available.
-- See docs/README.md#normalization for general normalization rules.
+- See  [Normalization](/docs/README.md#normalization) for general normalization rules.
 
 ## Examples
 ```javascript
