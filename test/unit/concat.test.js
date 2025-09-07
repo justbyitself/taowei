@@ -48,4 +48,20 @@ describe('concat', () => {
     const iterable = concat('hello', 'world')
     expect(iterable[Symbol.iterator]().toArray()).toStrictEqual(['hello', 'world'])
   })
+  
+  it('should handle a plain iterator (next-only) by yielding its values', () => {
+    // Plain iterator: tiene next() pero no Symbol.iterator
+    const plainIterator = (() => {
+      let i = 0
+      return {
+        next() {
+          if (i < 3) return { value: ++i, done: false }
+          return { value: undefined, done: true }
+        }
+      }
+    })()
+
+    const iterable = concat(1, plainIterator, 4)
+    expect(iterable[Symbol.iterator]().toArray()).toStrictEqual([1, 1, 2, 3, 4])
+  })  
 })
