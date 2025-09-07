@@ -1,4 +1,8 @@
 import concat from './concat.js'
 
-export default f => (...args) => Iterator.from(concat(...args))
-  .map(v => f(v))
+export default fn => (...args) => function* () {
+  const iterable = concat(...args)
+  for (let value of iterable) {
+    yield fn(value)
+  }
+}()
