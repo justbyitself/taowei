@@ -4,22 +4,20 @@
   </a>
   
   **🚧 Work In Progress (WIP) 🚧**
-  
-  ![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)
+  [![npm version](https://img.shields.io/npm/v/taowei.svg)](https://www.npmjs.com/package/taowei) ![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)
 </div>
 
 ## Introduction
 Taowei is a functional, iterable-focused JavaScript library.
 
-This library provides a set of utilities that make working with iterables and functional programming more intuitive and elegant.
+This is a curiosity-driven project that provides a set of utilities that make working with iterables and functional programming more intuitive and elegant.
 
 ## Features
 
-- Extensive (+100) functional programming utilities
+- Extensive functional programming utilities
 - Comprehensive iterable manipulation functions
 - Predicate functions for type checking and comparison
 - Currying and function composition support
-- Sequence generation tools
 
 ## Installation
 
