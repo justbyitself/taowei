@@ -3,10 +3,10 @@
 Applies a mapping function to each item from one or more sources and returns a lazy iterable of results.
 
 ## Signature
-(fn: Any -> Any) -> (...sources: Any) -> Iterable
+(Any -> Any) -> (...Any) -> Iterable
 
 ## Behavior
-See docs/README.md#normalization
+- See [Input normalization](/docs/README.md#input-normalization) for more information.
 
 ## Examples
 ```javascript
