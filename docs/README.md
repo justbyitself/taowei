@@ -15,7 +15,7 @@ For now, the best usage examples can be found in the [test files](/test).
 - [camelToKebab](/docs/camelToKebab.md)
 - compose
 - composeOf
-- concat
+- [concat](/docs/concat.md)
 - cond
 - curry
 - cycle
@@ -35,7 +35,6 @@ For now, the best usage examples can be found in the [test files](/test).
 - forEach
 - id
 - ifThenElse
-- index
 - isArray
 - isBoolean
 - isDivisibleBy
@@ -49,6 +48,7 @@ For now, the best usage examples can be found in the [test files](/test).
 - isGreaterThan
 - isGreaterThanOrEqualTo
 - isInRange
+- [isInteger](/docs/isInteger.md)
 - isInstanceOf
 - isIterable
 - isIterator
@@ -73,7 +73,7 @@ For now, the best usage examples can be found in the [test files](/test).
 - join
 - last
 - length
-- map
+- [map](/docs/map.md)
 - max
 - maxOf
 - min
@@ -88,6 +88,7 @@ For now, the best usage examples can be found in the [test files](/test).
 - prepend
 - property
 - quotient
+- [randomInt](/docs/randomInt.md)
 - reduce
 - reject
 - repeat
