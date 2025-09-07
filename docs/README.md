@@ -84,6 +84,7 @@ For now, the best usage examples can be found in the [test files](/test).
 - not
 - or
 - otherwise
+- [pick](/docs/pick.md)
 - pipe
 - prepend
 - property
