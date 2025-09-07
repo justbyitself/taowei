@@ -33,7 +33,7 @@ For now, the best usage examples can be found in the [test files](/test).
 - flip
 - fold
 - forEach
-- id
+- [id](/docs/id.md)
 - ifThenElse
 - isArray
 - isBoolean
