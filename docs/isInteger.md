@@ -3,7 +3,7 @@
 Checks whether a value is a integer.
 
 ## Signature
-(value: Any) -> Boolean
+Any -> Boolean
 
 ## Behavior
 - Exactly mirrors the semantics of built-in Number.isInteger.
