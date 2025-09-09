@@ -1,29 +1,55 @@
 import { describe, it, expect } from 'vitest'
-import { fold } from '../../src'
-
-const f = (a, b) => a + b
+import fold from '../../src/fold.js'
+import foldWithInit from '../../src/foldWithInit.js'
 
 describe('fold', () => {
-  it('should fold an iterable to an initial value', () => {
-    const iterator = Iterator.from([1, 2, 3, 4, 5])
-    expect(fold(f)(0)(iterator)).toBe(15)
+  it('reduces iterables without initial value', () => {
+    const sum = x => y => x + y
+    const result = fold(sum)([1, 2], 3, [4])
+    expect(result).toBe(10)
   })
 
-  it('should work with an empty iterable', () => {
-    const iterator = Iterator.from([])
-    expect(fold(f)(0)(iterator)).toBe(0)
+  it('preserves order of reduction', () => {
+    const subtract = x => y => x - y
+    const result = fold(subtract)([10, 5], 20, [3])
+    expect(result).toBe(-18)
   })
 
-  it('should work with an iterable of strings', () => {
-    const iterator = Iterator.from(['a', 'b', 'c'])
-    expect(fold(f)('')(iterator)).toBe('abc')
+  it('works with custom iterables', () => {
+    const custom = {
+      *[Symbol.iterator]() {
+        yield 10
+        yield 20
+      }
+    }
+    const max = x => y => Math.max(x, y)
+    const result = fold(max)(custom, 5)
+    expect(result).toBe(20)
   })
 
-  it('should return the initial value when no iterable is provided', () => {
-    expect(fold(f)(0)()).toBe(0)
+  it('handles single input', () => {
+    const double = x => y => x + y
+    const result = fold(double)([10])
+    expect(result).toBe(10)
+  })
+})
+
+describe('foldWithInit', () => {
+  it('reduces multiple iterables with an initial value', () => {
+    const sum = x => y => x + y
+    const result = foldWithInit(sum)(0)([1, 2], 3, [4])
+    expect(result).toBe(10)
   })
 
-  it('should fold multiple arguments', () => {
-    expect(fold(f)(0)(1, Iterator.from([2, 3]), 4)).toBe(10)
+  it('handles empty iterables with initial value', () => {
+    const concat = x => y => x + y
+    const result = foldWithInit(concat)('start')([], 'end', [])
+    expect(result).toBe('startend')
+  })
+
+  it('preserves order of reduction with initial value', () => {
+    const subtract = x => y => x - y
+    const result = foldWithInit(subtract)(100)([10, 5], 20, [3])
+    expect(result).toBe(62)
   })
 })

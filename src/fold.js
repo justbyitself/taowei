@@ -1,4 +1,5 @@
-import concat from './concat.js'
+import foldWithInit from './foldWithInit.js'
+import first from './first.js'
+import drop from './drop.js'
 
-export default f => initial => (...args) => Iterator.from(concat(...args))
-  .reduce(f, initial)
+export default fn => (...args) => foldWithInit(fn)(first(...args))(drop(1)(...args))
