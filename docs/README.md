@@ -13,6 +13,7 @@ For now, the best usage examples can be found in the [test files](/test).
 - append
 - between
 - [camelToKebab](/docs/camelToKebab.md)
+- [cartesian](/docs/cartesian.md)
 - [chars](/docs/chars.md)
 - compose
 - composeOf
@@ -32,7 +33,8 @@ For now, the best usage examples can be found in the [test files](/test).
 - find
 - first
 - flip
-- fold
+- [fold](/docs/fold.md)
+- [foldWithInit](/docs/foldWithInit.md)
 - forEach
 - [id](/docs/id.md)
 - ifThenElse
@@ -94,6 +96,7 @@ For now, the best usage examples can be found in the [test files](/test).
 - reduce
 - reject
 - repeat
+- [repeatEffect](/docs/repeatEffect.md)
 - second
 - singleton
 - some
@@ -102,6 +105,7 @@ For now, the best usage examples can be found in the [test files](/test).
 - sum
 - take
 - takeWhile
+- [times](/docs/times.md)
 - toArray
 - toFunction
 - toMap
@@ -110,8 +114,10 @@ For now, the best usage examples can be found in the [test files](/test).
 - typeOf
 - uncurry
 - unwords
+- [withIndex](/docs/withIndex.md)
 - withPrevious
 - words
+- [zip](/docs/zip.md)
 
 
 ## Input normalization
