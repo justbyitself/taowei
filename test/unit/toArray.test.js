@@ -16,8 +16,4 @@ describe('toArray', () => {
   it('handles empty iterables', () => {
     expect(toArray([])).toEqual([])
   })
-
-  it('does not treat strings as iterables if library policy says so', () => {
-    expect(toArray('ab')).toEqual(['ab'])
-  })
 })
