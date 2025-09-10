@@ -3,7 +3,7 @@
 Returns its argument unchanged (identity function).
 
 ## Signature
-(x: Any) -> Any
+Any -> Any
 
 ## Examples
 ```javascript
