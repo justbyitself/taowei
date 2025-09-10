@@ -1,4 +1,5 @@
-import fold from './fold.js'
+import foldWithInit from './foldWithInit.js'
+import always from './always.js'
 import succ from './succ.js'
 
-export default fold(succ)(0)
+export default foldWithInit(acc => always(succ(acc)))(0)
