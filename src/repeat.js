@@ -1,4 +1,4 @@
 import iterate from './iterate.js'
-import always from './always.js'
+import constant from './constant.js'
 
-export default x => iterate(always(x))(x)
+export default x => iterate(constant(x))(x)

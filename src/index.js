@@ -1,6 +1,6 @@
 export { default as abs } from './abs.js'
 export { default as add } from './add.js'
-export { default as always } from './always.js'
+export { default as constant } from './constant.js'
 export { default as and } from './and.js'
 export { default as append } from './append.js'
 export { default as between } from './between.js'
