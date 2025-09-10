@@ -1,8 +1,4 @@
-import concat from './concat.js'
-
-export default fn => init => (...args) => {
-  const iterable = concat(...args)
-
+export default fn => init => iterable => {
   let acc = init
   for (const value of iterable) {
     acc = fn(acc)(value)
