@@ -2,36 +2,31 @@ import { describe, it, expect } from 'vitest'
 
 import withIndex from '../../src/withIndex.js'
 
-describe('withIndex function', () => {
-  // Basic functionality test with a simple array
+describe('withIndex', () => {
   it('should add index to a simple array', () => {
     const input = ['a', 'b', 'c']
-    const result = [...withIndex(input)]
-    expect(result).toEqual([[0, 'a'], [1, 'b'], [2, 'c']])
+    const result = withIndex(input)
+    expect([...result]).toEqual([['a', 0], ['b', 1], ['c', 2]])
   })
 
-  // Edge case: empty array
   it('should work with an empty array', () => {
     const input = []
     const result = [...withIndex(input)]
     expect(result).toEqual([])
   })
 
-  // Edge case: single-element array
   it('should work with a single-element array', () => {
     const input = ['test']
     const result = [...withIndex(input)]
-    expect(result).toEqual([[0, 'test']])
+    expect(result).toEqual([['test', 0]])
   })
 
-  // Test with different iterable types
   it('should work with different types of iterables', () => {
     const input = new Set([10, 20, 30])
     const result = [...withIndex(input)]
-    expect(result).toEqual([[0, 10], [1, 20], [2, 30]])
+    expect(result).toEqual([[10, 0], [20, 1], [30, 2]])
   })
 
-  // Test with generator functions
   it('should work with generator functions', () => {
     function* generateNumbers() {
       yield 1
@@ -39,7 +34,7 @@ describe('withIndex function', () => {
       yield 3
     }
     const result = [...withIndex(generateNumbers())]
-    expect(result).toEqual([[0, 1], [1, 2], [2, 3]])
+    expect(result).toEqual([[1, 0], [2, 1], [3, 2]])
   })
 })
 
