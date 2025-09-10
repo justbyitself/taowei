@@ -6,8 +6,8 @@ For now, the best usage examples can be found in the [test files](/test).
 
 ## Functions
 
-- abs
-- add
+- [abs](/docs/abs.md)
+- [add](/docs/add.md)
 - always
 - and
 - append
