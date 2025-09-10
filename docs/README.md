@@ -8,8 +8,7 @@ For now, the best usage examples can be found in the [test files](/test).
 
 - [abs](/docs/abs.md)
 - [add](/docs/add.md)
-- always
-- and
+- [and](/docs/and.md)
 - append
 - between
 - [camelToKebab](/docs/camelToKebab.md)
@@ -18,6 +17,7 @@ For now, the best usage examples can be found in the [test files](/test).
 - compose
 - composeOf
 - [concat](/docs/concat.md)
+- [constant](/docs/constant.md)
 - cond
 - curry
 - cycle
