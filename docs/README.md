@@ -113,7 +113,6 @@ For now, the best usage examples can be found in the [test files](/test).
 - tryCatch
 - typeOf
 - uncurry
-- unwords
 - [withIndex](/docs/withIndex.md)
 - withPrevious
 - words
