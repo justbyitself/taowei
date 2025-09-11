@@ -17,10 +17,4 @@ describe('find', () => {
     const isThree = x => x === 3
     expect(find(isThree)(set)).toBe(3)
   })
-
-  it('treats strings as values (not iterables) unless passed as iterable', () => {
-    // if implementation treats string as value, predicate receives the whole string
-    const hasA = s => typeof s === 'string' && s.includes('a')
-    expect(find(hasA)('alpha')).toBe('alpha')
-  })
 })

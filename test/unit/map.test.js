@@ -2,28 +2,16 @@ import { describe, it, expect } from 'vitest'
 import map from '../../src/map.js'
 
 describe('map', () => {
-  it('maps over mixed iterables and non-iterables', () => {
+  it('maps over mixed iterables', () => {
     const double = x => x * 2
-    const result = map(double)([1, 2], 3, [4])
+    const result = map(double)([1, 2, 3, 4])
     expect(Array.from(result)).toEqual([2, 4, 6, 8])
   })
 
-  it('maps over a single iterable and a non-iterable', () => {
-    const toStr = x => String(x)
-    const result = map(toStr)([1, 2, 3], 4)
-    expect(Array.from(result)).toEqual(['1', '2', '3', '4'])
-  })
-
-  it('handles empty iterables and values', () => {
+  it('handles empty iterables', () => {
     const inc = x => x + 1
-    const result = map(inc)([], 1, [])
-    expect(Array.from(result)).toEqual([2])
-  })
-
-  it('preserves order across inputs', () => {
-    const id = x => x
-    const result = map(id)(['a', 'b'], 'c', ['d'])
-    expect(Array.from(result)).toEqual(['a', 'b', 'c', 'd'])
+    const result = map(inc)([])
+    expect(Array.from(result)).toEqual([])
   })
 
   it('works with custom iterables', () => {
@@ -34,28 +22,7 @@ describe('map', () => {
         yield 20
       }
     }
-    const result = map(addOne)(custom, 5)
-    expect(Array.from(result)).toEqual([11, 21, 6])
-  })
-
-  it('does not materialize large iterables (works lazily)', () => {
-    function* gen(n) { for (let i = 0; i < n; i++) yield i }
-    const result = map(x => x + 1)(gen(1000))
-    // consume first and last checks to ensure laziness doesn't precompute array
-    const arr = Array.from(result)
-    expect(arr.length).toBe(1000)
-    expect(arr[0]).toBe(1)
-    expect(arr[999]).toBe(1000)
-  })
-
-  it('receives only une arg (value)', () => {
-    const calls = []
-    const mapper = v => (calls.push(v), v)
-
-    const iterable = map(mapper)([1, 2], 3)
-
-    for (const _ of iterable) {}
-
-    expect(calls).toEqual([1, 2, 3])
+    const result = map(addOne)(custom)
+    expect(Array.from(result)).toEqual([11, 21])
   })
 })

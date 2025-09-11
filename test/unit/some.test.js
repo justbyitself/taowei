@@ -3,7 +3,7 @@ import some from '../../src/some.js'
 
 describe('some', () => {
   it('returns true if at least one element matches across mixed inputs', () => {
-    const result = some(x => x > 5)([1, 2, 3], 6, [4, 5, 8])
+    const result = some(x => x > 5)([1, 2, 3, 6, 4, 5, 8])
     expect(result).toBe(true)
   })
 
@@ -20,7 +20,7 @@ describe('some', () => {
   it('stops early when a match is found (short-circuit)', () => {
     let calls = 0
     const p = x => { calls++; return x === 2 }
-    const result = some(p)(1, 2, 3, 4)
+    const result = some(p)([1, 2, 3, 4])
     expect(result).toBe(true)
     expect(calls).toBeLessThanOrEqual(2)
   })

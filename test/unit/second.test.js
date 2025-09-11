@@ -19,12 +19,6 @@ describe('second', () => {
     expect(second(set)).toBe(2)
   })
 
-  it('returns the second element when inputs are multiple iterables concatenated', () => {
-    expect(second([1], [2, 3])).toBe(2)
-    expect(second([1, 2], [3])).toBe(2)
-    expect(second([1], [2], [3])).toBe(2)
-  })
-
   it('handles non-integer-like inputs gracefully', () => {
     const arr = [null, undefined, 0]
     expect(second(arr)).toBeUndefined()

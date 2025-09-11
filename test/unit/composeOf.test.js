@@ -6,18 +6,18 @@ describe('composeOf', () => {
     const f = x => x + 1
     const g = x => x * 2
     const h = x => x * 10
-    const p = composeOf(f, g, h)
+    const p = composeOf([f, g, h])
     expect(typeof p).toBe('function')
     expect(p(2)).toBe(41)
   })
 
   it('works with single function', () => {
     const f = x => x * 3
-    expect(composeOf(f)(2)).toBe(6)
+    expect(composeOf([f])(2)).toBe(6)
   })
 
   it('returns identity when no functions provided', () => {
-    const id = composeOf()
+    const id = composeOf([])
     expect(id(5)).toBe(5)
   })
 })

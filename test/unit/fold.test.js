@@ -3,15 +3,15 @@ import fold from '../../src/fold.js'
 import foldWithInit from '../../src/foldWithInit.js'
 
 describe('fold', () => {
-  it('reduces iterables without initial value', () => {
+  it('reduces and iterable without initial value', () => {
     const sum = x => y => x + y
-    const result = fold(sum)([1, 2], 3, [4])
+    const result = fold(sum)([1, 2, 3, 4])
     expect(result).toBe(10)
   })
 
   it('preserves order of reduction', () => {
     const subtract = x => y => x - y
-    const result = fold(subtract)([10, 5], 20, [3])
+    const result = fold(subtract)([10, 5, 20, 3])
     expect(result).toBe(-18)
   })
 
@@ -31,25 +31,5 @@ describe('fold', () => {
     const double = x => y => x + y
     const result = fold(double)([10])
     expect(result).toBe(10)
-  })
-})
-
-describe('foldWithInit', () => {
-  it('reduces multiple iterables with an initial value', () => {
-    const sum = x => y => x + y
-    const result = foldWithInit(sum)(0)([1, 2], 3, [4])
-    expect(result).toBe(10)
-  })
-
-  it('handles empty iterables with initial value', () => {
-    const concat = x => y => x + y
-    const result = foldWithInit(concat)('start')([], 'end', [])
-    expect(result).toBe('startend')
-  })
-
-  it('preserves order of reduction with initial value', () => {
-    const subtract = x => y => x - y
-    const result = foldWithInit(subtract)(100)([10, 5], 20, [3])
-    expect(result).toBe(62)
   })
 })

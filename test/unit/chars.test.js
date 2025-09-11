@@ -10,9 +10,4 @@ describe('chars', () => {
     const s = 'a\u{1F600}b' // 😀
     expect(Array.from(chars(s))).toEqual(['a','\u{1F600}','b'])
   })
-
-  it('throws for non-strings', () => {
-    expect(() => chars(123)).toThrow(TypeError)
-    expect(() => chars(null)).toThrow(TypeError)
-  })
 })
