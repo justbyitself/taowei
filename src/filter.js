@@ -1,4 +1,7 @@
-import concat from './concat.js'
-
-export default predicate => (...args) => Iterator.from(concat(...args))
-  .filter(predicate)
+export default predicate => iterable => function* () {
+  for (const value of iterable) {
+    if (predicate(value)) {
+      yield value
+    }
+  }
+}()
