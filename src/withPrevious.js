@@ -1,12 +1,10 @@
 import toFunction from './toFunction.js'
-import concat from './concat.js'
 
-export default (n = Infinity) => (...args) => {
-  const iterator = Iterator.from(concat(...args))
+export default (n = Infinity) => iterable => {
   const previous = []
 
   return (function* () {
-    for (const item of iterator) {
+    for (const item of iterable) {
       const f = toFunction(item)
       const result = f(previous)
 

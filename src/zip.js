@@ -1,18 +1,15 @@
-import map from './map.js'
-import some from './some.js'
+import toIterator from './toIterator'
 
-// TODO: implementaro sólo para iterables, no iteradores
-export default (...iterables) => function* () {
-  // TODO: refactorizar con toIterator
-  const iterators = [...map(iterable => 
-    Symbol.iterator in iterable ? iterable[Symbol.iterator]() : iterable
-  )(iterables)]
-
+export default a => b => function* () {
+  const iterA = toIterator(a)
+  const iterB = toIterator(b)
+  
   while (true) {
-    const values = [...map(iterator => iterator.next())(iterators)]
+    const nextA = iterA.next()
+    const nextB = iterB.next()
     
-    if (some(({ done }) => done)(values)) return
-
-    yield [...map(({ value }) => value)(values)]
+    if (nextA.done || nextB.done) break
+    
+    yield [nextA.value, nextB.value]
   }
 }()
