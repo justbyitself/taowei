@@ -1,4 +1,4 @@
-import concat from './concat.js'
+import filter from './filter.js'
+import first from './first.js'
 
-export default predicate => (...args) => Iterator.from(concat(...args))
-  .find(predicate)
+export default predicate => iterable => first(filter(predicate)(iterable))

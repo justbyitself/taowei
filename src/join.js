@@ -1,5 +1,3 @@
-import concat from './concat.js'
+import toArray from './toArray.js'
 
-export default (separator = '') => (...args) => Iterator.from(concat(...args))
-  .toArray()
-  .join(separator)
+export default separator => iterable => toArray(iterable).join(separator)

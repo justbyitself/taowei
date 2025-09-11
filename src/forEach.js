@@ -1,4 +1,5 @@
-import concat from './concat.js'
-
-export default callback => (...args) => Iterator.from(concat(...args))
-  .forEach(callback)
+export default fn => iterable => {
+  for (const value of iterable) {
+    fn(value)
+  }
+}

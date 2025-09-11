@@ -1,7 +1,6 @@
-import concat from './concat.js'
+import toIterator from './toIterator.js'
 
-export default (...args) => {
-  const it = concat(...args)
-  const res = it.next()
+export default iterable => {
+  const res = toIterator(iterable).next()
   return res.done ? undefined : res.value
 }
