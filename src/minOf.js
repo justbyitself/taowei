@@ -1,1 +1,1 @@
-export default (...numbers) => Math.min(...numbers)
+export default iterable => Math.min(...iterable)

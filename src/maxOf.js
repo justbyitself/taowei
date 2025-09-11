@@ -1,1 +1,1 @@
-export default (...numbers) => Math.max(...numbers)
+export default iterable => Math.max(...iterable)

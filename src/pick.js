@@ -1,12 +1,11 @@
 import randomInt from './randomInt.js'
-import concat from './concat.js'
+import at from './at.js'
 import length from './length.js'
 
-export default (...values) => {
-  const iterable = concat(...values)
+export default iterable => {
   const l = length(iterable)
 
-  if (l > 0) {
-    return values[randomInt(0)(l - 1)]
+  if (l>0) {
+    return at(randomInt(0)(l - 1))(iterable)
   }
 }
