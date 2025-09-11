@@ -1,4 +1,10 @@
-import concat from './concat.js'
+export default limit => iterable => function* () {
+  if (limit === 0) return
 
-export default limit => (...args) => Iterator.from(concat(...args))
-  .take(limit)
+  let count = 0
+  for (const value of iterable) {
+    if (count >= limit) break
+    yield value
+    count++
+  }
+}()

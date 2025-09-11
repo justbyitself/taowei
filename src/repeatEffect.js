@@ -1,5 +1,5 @@
-export default f => (function* () {
+export default f => function* () {
   while (true) {
     yield f()
   }
-})()
+}()

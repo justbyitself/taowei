@@ -1,10 +1,4 @@
-import concat from './concat.js'
+import first from './first.js'
+import drop from './drop.js'
 
-export default (...args) => {
-  const it = Iterator.from(concat(...args))
-  // advance once to skip the first
-  const first = it.next()
-  if (first.done) return undefined
-  const second = it.next()
-  return second.done ? undefined : second.value
-}
+export default iterable => first(drop(1)(iterable))
