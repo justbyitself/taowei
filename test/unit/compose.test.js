@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { compose } from '../../src'
+import { compose } from '../../src/index.js'
 
 describe('compose function', () => {
   it('should return the same value it receives', () => {
