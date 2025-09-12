@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { isPositive } from '../../src'
+import { isPositive } from '../../src/index.js'
 
 describe('isPositive', () => {
   it('returns true for numbers greater than 0 and false otherwise', () => {
