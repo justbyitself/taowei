@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { setEntry } from '../../src'
+import { setEntry } from '../../src/index.js'
 
 describe('setEntry', () => {
   it('should set a key-value pair in a map', () => {
