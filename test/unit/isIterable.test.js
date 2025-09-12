@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { isIterator } from '../../src'
+import { isIterator } from '../../src/index.js'
 
 describe('isIterator', () => {
   it('should return false for null and undefined', () => {
