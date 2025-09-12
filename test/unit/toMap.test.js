@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { toMap } from '../../src'
+import { toMap } from '../../src/index.js'
 
 describe('toMap', () => {
   it('should convert a POJO to a Map', () => {
