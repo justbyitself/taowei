@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { iterate } from '../../src'
+import { iterate } from '../../src/index.js'
 
 describe('iterate function', () => {
   it('should generate an infinite sequence based on the provided function', () => {
