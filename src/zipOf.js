@@ -1,8 +1,8 @@
-import zip from './zip'
-import fold from './fold'
-import map from './map'
-import flat from './flat'
-import toArray from './toArray'
-import compose from './compose'
+import zip from './zip.js'
+import fold from './fold.js'
+import map from './map.js'
+import flat from './flat.js'
+import toArray from './toArray.js'
+import compose from './compose.js'
 
 export default iterable => map(compose(toArray)(flat))(fold(zip)(iterable))
