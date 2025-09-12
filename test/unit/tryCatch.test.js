@@ -26,7 +26,7 @@ describe('tryCatch (currified, forwards args, catch receives (err, ...args))', (
 
   it('forwards error and original args to catch callback', () => {
     let received = null
-    const tryFn = (x, y) => { throw new Error('bad') }
+    const tryFn = () => { throw new Error('bad') }
     const catchFn = (err, x, y) => { received = { err, x, y }; return 'ok' }
 
     const result = tryCatch(tryFn)(catchFn)(7, 8)
