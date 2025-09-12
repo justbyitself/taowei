@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { singleton } from '../../src'
+import { singleton } from '../../src/index.js'
 
 describe('singleton', () => {
   it('should return an iterator with a single value', () => {
