@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { constant } from '../../src'
+import { constant } from '../../src/index.js'
 
 describe('constant', () => {
   it('should return a function that always returns the value x', () => {
