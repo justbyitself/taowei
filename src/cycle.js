@@ -1,7 +1,7 @@
 export default iterable => function* () {
-  let array = Array.from(iterable)
+  const array = Array.from(iterable)
   while (true) {
-    for (let i of array) {
+    for (const i of array) {
       yield i
     }
   }
