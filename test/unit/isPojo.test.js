@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { isPojo } from '../../src'
+import { isPojo } from '../../src/index.js'
 
 describe('isPojo', () => {
   it('should return true for a plain object', () => {
