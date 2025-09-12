@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import isGenerator from '../../src/isGenerator'
+import isGenerator from '../../src/isGenerator.js'
 
 function* sampleGen() { yield 1 }
 
