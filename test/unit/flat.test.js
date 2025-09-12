@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { flat } from '../../src'
+import { flat } from '../../src/index.js'
 
 describe('flat', () => {
   it('should flatten a nested array with infinite depth', () => {
