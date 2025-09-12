@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { merge } from '../../src'
+import { merge } from '../../src/index.js'
 
 describe('merge', () => {
   it('should merge two maps with unique keys', () => {
