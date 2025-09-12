@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { withPrevious, takeWhile, isLesserThanOrEqualTo as lte, repeat, sum, filter, flat, isEven } from '../../src'
+import { withPrevious, takeWhile, isLesserThanOrEqualTo as lte, repeat, sum, filter, flat, isEven } from '../../src/index.js'
 
 /*
   Project Euler #2: Even Fibonacci Numbers
