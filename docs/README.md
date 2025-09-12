@@ -2,8 +2,6 @@
 
 🚧 **Work In Progress (WIP)** 🚧
 
-For now, the best usage examples can be found in the [test files](/test).
-
 ## Functions
 
 - [abs](/docs/abs.md)
@@ -117,15 +115,3 @@ For now, the best usage examples can be found in the [test files](/test).
 - withPrevious
 - words
 - [zip](/docs/zip.md)
-
-
-## Input normalization
-Many functions accept variadic sources `(...Any) -> Iterable`. Inputs are normalized by [concat](/docs/concat.md): strings stay single values, iterables yield their elements, next‑only iterators are consumed once, and other values are yielded as single items.
-- Normalization rules (summary):
-  - Strings are treated as single values (not iterated as characters). If you really need a iterator of characters, use [chars](/docs/chars.md) function. 
-  - If a source is iterable (has Symbol.iterator), its elements are yielded.
-  - If a source is an iterator (has next() but no Symbol.iterator), it is consumed once via an internal adapter; one‑shot iterators are advanced/consumed.
-  - Non-iterable, non-iterator values are yielded as individual items.
-- Notes:
-  - Returned iterables are lazy. If you pass one‑shot sources, repeated iteration may produce different (or empty) results.
-  - If a source iterator implements `return()`, the normalizer will call it during cleanup when possible.
