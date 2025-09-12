@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { iterate, succ, take, toArray } from '../../src'
+import { iterate, succ, take, toArray } from '../../src/index.js'
 
 describe('iterators', () => {
   it('takes first 5 natural numbers', () => {
