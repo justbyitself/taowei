@@ -1,4 +1,4 @@
-import toIterator from './toIterator'
+import toIterator from './toIterator.js'
 
 export default a => b => function* () {
   const iterA = toIterator(a)
