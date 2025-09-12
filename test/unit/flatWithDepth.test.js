@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { flatWithDepth } from '../../src'
+import { flatWithDepth } from '../../src/index.js'
 
 describe('flatWithDepth', () => {
   it('should flatten a nested array with depth 1', () => {
