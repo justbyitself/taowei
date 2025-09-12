@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { words } from '../../src'
+import { words } from '../../src/index.js'
 
 const tests = [
   { input: "Hello, this is an example of words", expected: ["Hello,", "this", "is", "an", "example", "of", "words"] },
