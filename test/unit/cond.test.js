@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { cond } from '../../src'
+import { cond } from '../../src/index.js'
 
 describe('cond', () => {
   it('should return the result of the matching function predicate', () => {
@@ -40,7 +40,7 @@ describe('cond', () => {
     const alwaysTrue = () => true
     const fn = cond([
       [alwaysTrue, 'always'],
-      [v => false, 'never']
+      [() => false, 'never']
     ])
     expect(fn(null)).toBe('always')
   })
@@ -48,7 +48,7 @@ describe('cond', () => {
   it('should stop at the first matching clause according to order', () => {
     const fn = cond([
       [v => v < 0, 'negative'],
-      [v => true, 'any']
+      [() => true, 'any']
     ])
     expect(fn(3)).toBe('any')
   })
