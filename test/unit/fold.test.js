@@ -1,6 +1,5 @@
 import { describe, it, expect } from 'vitest'
 import fold from '../../src/fold.js'
-import foldWithInit from '../../src/foldWithInit.js'
 
 describe('fold', () => {
   it('reduces and iterable without initial value', () => {
