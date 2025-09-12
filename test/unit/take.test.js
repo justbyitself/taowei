@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { take } from '../../src'
+import { take } from '../../src/index.js'
 
 describe('take', () => {
   it('should return the first n elements of an array as an iterator', () => {
