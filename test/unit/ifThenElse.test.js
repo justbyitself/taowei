@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { ifThenElse } from '../../src'
+import { ifThenElse } from '../../src/index.js'
 
 describe('ifThenElse', () => {
   it('should return the result of ifTruthy if the predicate is true', () => {
