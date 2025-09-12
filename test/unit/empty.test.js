@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { empty } from '../../src'
+import { empty } from '../../src/index.js'
 
 describe('empty', () => {
   it('empty() returns a fresh empty generator (iterable) each call', () => {
