@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { sum, filter, or, isDivisibleBy as isMultipleOf, enumFromTo } from '../../src'
+import { sum, filter, or, isDivisibleBy as isMultipleOf, enumFromTo } from '../../src/index.js'
 
 /*
   Project Euler #1: Multiples of 3 or 5 
