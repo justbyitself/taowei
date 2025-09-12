@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { repeat } from '../../src'
+import { repeat } from '../../src/index.js'
 
 describe('repeat function', () => {
   it('should return an iterator that yields the same value indefinitely', () => {
