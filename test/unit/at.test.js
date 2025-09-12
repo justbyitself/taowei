@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { at } from '../../src'
+import { at } from '../../src/index.js'
 
 describe('at', () => {
   it('should return the nth element of an array', () => {
