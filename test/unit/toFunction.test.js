@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { toFunction } from '../../src'
+import { toFunction } from '../../src/index.js'
 
 describe('toFunction', () => {
   it('should return the input if it is a function', () => {
