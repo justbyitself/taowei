@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { cycle } from '../../src'
+import { cycle } from '../../src/index.js'
 
 describe('cycle', () => {
   it('should cycle through the iterator', () => {
