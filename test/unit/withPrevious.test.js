@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { withPrevious } from '../../src'
+import { withPrevious } from '../../src/index.js'
 
 describe('withPrevious', () => {
   it('should generate values based on the provided iterator and functions', () => {
