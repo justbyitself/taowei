@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { isTrue } from '../../src'
+import { isTrue } from '../../src/index.js'
 
 describe('isTrue', () => {
   it('returns true only for strict true', () => {
