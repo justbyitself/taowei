@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest'
-import { withPrevious, takeWhile, isLesserThanOrEqualTo as lte, repeat, sum, filter, flat, isEven } from '../../src/index.js'
+import { withPrevious, takeWhile, isLesserThanOrEqualTo as lte, 
+  repeat, sum, filter, concat, isEven } from '../../src/index.js'
 
 /*
   Project Euler #2: Even Fibonacci Numbers
@@ -16,7 +17,7 @@ describe('Project Euler #2', () => {
   it('Taowei implementation matches imperative solution and yields 233168', () => {
     // Taowei implementation
     const taoweiResult = (() => {
-      const fibonacci = withPrevious(2)(flat([1, 2, repeat(sum)]))
+      const fibonacci = withPrevious(2)(concat([1, 2, repeat(sum)]))
       const evenFibonacci = filter(isEven)(fibonacci)
       const firstEvenFibonacci = takeWhile(lte(4_000_000))(evenFibonacci)
       return sum(firstEvenFibonacci)

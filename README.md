@@ -75,9 +75,9 @@ https://projecteuler.net/problem=2
 
 ```js
 import { withPrevious, takeWhile, isLesserThanOrEqualTo as lte, 
-  repeat, sum, filter, flat, isEven } from 'taowei'
+  repeat, sum, filter, concat, isEven } from 'taowei'
 
-const fibonacci = withPrevious(2)(flat([1, 2, repeat(sum)]))
+const fibonacci = withPrevious(2)(concat([1, 2, repeat(sum)]))
 const evenFibonacci = filter(isEven)(fibonacci)
 const firstEvenFibonacci = takeWhile(lte(4_000_000))(evenFibonacci)
 
