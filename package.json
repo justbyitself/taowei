@@ -1,6 +1,6 @@
 {
   "name": "taowei",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Functional, iterable-focused library",
   "author": "justbyitself",
   "email": "justbyitself@proton.me",
@@ -14,7 +14,6 @@
     "functional-programming",
     "javascript",
     "typescript",
-    "iterator",
     "composition",
     "utility-functions"
   ],
