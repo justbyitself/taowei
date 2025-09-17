@@ -22,6 +22,7 @@
 - div
 - drop
 - empty
+- entries
 - enumFrom
 - enumFromThen
 - enumFromThenTo
@@ -30,6 +31,7 @@
 - filter
 - find
 - first
+- flatten
 - flip
 - [fold](/docs/fold.md)
 - [foldWithInit](/docs/foldWithInit.md)
@@ -72,11 +74,13 @@
 - isZero
 - iterate
 - join
+- keys
 - last
 - length
 - [map](/docs/map.md)
 - max
 - maxOf
+- method
 - min
 - minOf
 - mod
@@ -107,11 +111,17 @@
 - toArray
 - toFunction
 - toMap
+- toMapOf
 - trim
 - tryCatch
 - typeOf
 - uncurry
+- unless
+- values
+- when
+- whenElse
 - [withIndex](/docs/withIndex.md)
 - withPrevious
 - words
 - [zip](/docs/zip.md)
+- zipOf
