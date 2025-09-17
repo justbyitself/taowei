@@ -1,0 +1,1 @@
+export default  methodName => obj => obj[methodName].bind(obj)
