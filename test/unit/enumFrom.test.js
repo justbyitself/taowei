@@ -3,7 +3,10 @@ import enumFrom from '../../src/enumFrom.js' // Ensure the path is correct
 
 describe('enumFrom', () => {
   it('generates an infinite iterable starting from 1', () => {
-    const iterator = enumFrom(1)
+    const iterable = enumFrom(1)
+
+    const iterator = iterable[Symbol.iterator]()
+
     const results = []
 
     // Get the first 5 values
@@ -15,7 +18,10 @@ describe('enumFrom', () => {
   })
 
   it('generates an infinite iterable starting from 0', () => {
-    const iterator = enumFrom(0)
+    const iterable = enumFrom(0)
+
+    const iterator = iterable[Symbol.iterator]()
+
     const results = []
 
     // Get the first 5 values
@@ -27,7 +33,10 @@ describe('enumFrom', () => {
   })
 
   it('generates an infinite iterable starting from a negative number', () => {
-    const iterator = enumFrom(-3)
+    const iterable = enumFrom(-3)
+
+    const iterator = iterable[Symbol.iterator]()
+
     const results = []
 
     // Get the first 5 values
@@ -39,7 +48,9 @@ describe('enumFrom', () => {
   })
 
   it('does not terminate prematurely', () => {
-    const iterator = enumFrom(10)
+    const iterable = enumFrom(10)
+
+    const iterator = iterable[Symbol.iterator]()
 
     // Check the first few values
     expect(iterator.next().value).toBe(10)

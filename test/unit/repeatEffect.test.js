@@ -6,11 +6,13 @@ describe('repeatEffect', () => {
     let counter = 0
     const incrementCounter = () => ++counter
 
-    const effectIterator = repeatEffect(incrementCounter)
+    const iterable = repeatEffect(incrementCounter)
 
-    expect(effectIterator.next().value).toBe(1)
-    expect(effectIterator.next().value).toBe(2)
-    expect(effectIterator.next().value).toBe(3)
-    expect(effectIterator.next().done).toBe(false)
+    const iterator = iterable[Symbol.iterator]()
+
+    expect(iterator.next().value).toBe(1)
+    expect(iterator.next().value).toBe(2)
+    expect(iterator.next().value).toBe(3)
+    expect(iterator.next().done).toBe(false)
   })
 })

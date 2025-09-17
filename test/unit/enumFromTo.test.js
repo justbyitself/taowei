@@ -26,4 +26,10 @@ describe('enumFromTo', () => {
     const result = enumFromTo(5)(5)
     expect(Array.from(result)).toEqual([5])
   })
+
+  it('generates a reusable iterable', () => {
+    const result = enumFromTo(1)(5)
+    expect([...result]).toEqual([1,2,3,4,5])
+    expect([...result]).toEqual([1,2,3,4,5])
+  })
 })

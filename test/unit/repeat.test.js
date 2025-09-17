@@ -2,12 +2,14 @@ import { describe, it, expect } from 'vitest'
 import { repeat } from '../../src/index.js'
 
 describe('repeat function', () => {
-  it('should return an iterator that yields the same value indefinitely', () => {
-    const infiniteIterator = repeat('Hola')
+  it('should return an iterable that yields the same value indefinitely', () => {
+    const iterable = repeat('Hola')
+
+    const iterator = iterable[Symbol.iterator]()
 
     for (let i = 0; i < 5; i++) {
-      expect(infiniteIterator.next().value).toBe('Hola')
+      expect(iterator.next().value).toBe('Hola')
     }
-    expect(infiniteIterator.next().done).toBe(false)
+    expect(iterator.next().done).toBe(false)
   })
 })

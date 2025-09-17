@@ -9,7 +9,9 @@ describe('cycle', () => {
       yield 3
     }
 
-    const i = cycle(generator())
+    const iterable = cycle(generator())
+
+    const i = iterable[Symbol.iterator]()
 
     expect(i.next().value).toBe(1)
     expect(i.next().value).toBe(2)

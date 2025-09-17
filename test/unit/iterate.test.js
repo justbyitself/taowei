@@ -4,7 +4,9 @@ import { iterate } from '../../src/index.js'
 describe('iterate function', () => {
   it('should generate an infinite sequence based on the provided function', () => {
     const addTwo = (x) => x + 2
-    const iterator = iterate(addTwo)(0)
+    const iterable = iterate(addTwo)(0)
+
+    const iterator = iterable[Symbol.iterator]()
 
     const results = []
     for (let i = 0; i < 5; i++) {
@@ -17,8 +19,10 @@ describe('iterate function', () => {
 
   it('should work with different functions and initial values', () => {
     const multiplyByThree = (x) => x * 3
-    const iterator = iterate(multiplyByThree)(1)
+    const iterable = iterate(multiplyByThree)(1)
 
+    const iterator = iterable[Symbol.iterator]()
+    
     const results = []
     for (let i = 0; i < 5; i++) {
       results.push(iterator.next().value)
