@@ -1,4 +1,6 @@
-export default limit => iterable => function* () {
+import toReusable from './toReusable.js'
+
+export default limit => iterable => toReusable(function* () {
   if (limit === 0) {
     yield* iterable
     return
@@ -11,4 +13,4 @@ export default limit => iterable => function* () {
     }
     count++
   }
-}()
+})

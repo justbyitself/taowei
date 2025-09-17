@@ -1,9 +1,10 @@
 import toFunction from './toFunction.js'
+import toReusable from './toReusable.js'
 
 export default (n = Infinity) => iterable => {
   const previous = []
 
-  return (function* () {
+  return (toReusable(function* () {
     for (const item of iterable) {
       const f = toFunction(item)
       const result = f(previous)
@@ -15,5 +16,5 @@ export default (n = Infinity) => iterable => {
 
       yield result
     }
-  })()
+  }))
 }

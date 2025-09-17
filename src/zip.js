@@ -1,6 +1,7 @@
 import toIterator from './toIterator.js'
+import toReusable from './toReusable.js'
 
-export default a => b => function* () {
+export default a => b => toReusable(function* () {
   const iterA = toIterator(a)
   const iterB = toIterator(b)
   
@@ -12,4 +13,4 @@ export default a => b => function* () {
     
     yield [nextA.value, nextB.value]
   }
-}()
+})
