@@ -1,0 +1,1 @@
+export default item => arr => [...arr, item]
