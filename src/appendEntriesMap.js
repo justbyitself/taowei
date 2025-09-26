@@ -1,0 +1,1 @@
+export default entries => map => new Map([...map, ...entries])
