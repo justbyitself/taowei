@@ -1,0 +1,1 @@
+export default ([key, value]) => obj => ({...obj, ...{[key]: value}})
