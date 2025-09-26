@@ -1,1 +1,0 @@
-export default ([key, value]) => map => map.set(key, value)
