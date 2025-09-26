@@ -1,5 +1,5 @@
+import mergeEntry from './mergeEntry.js'
+import entries from './entries.js'
 import foldWithInit from './foldWithInit.js'
-import setEntry from './setEntry.js'
-import flip from './flip.js'
 
-export default foldWithInit(flip(setEntry))
+export default a => b => foldWithInit(mergeEntry)(a)(entries(b))
