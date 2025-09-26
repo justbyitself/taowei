@@ -3,7 +3,6 @@
     <img src="https://raw.githubusercontent.com/justbyitself/taowei/main/logo.svg" alt="Taowei logo" width="300"/>
   </a>
   
-  **🚧 Work In Progress (WIP) 🚧**
   [![npm version](https://img.shields.io/npm/v/taowei.svg)](https://www.npmjs.com/package/taowei) ![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)
 </div>
 
