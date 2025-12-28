@@ -1,4 +1,6 @@
-import compose from './compose.js'
-import toMapOf from './toMapOf.js'
+import foldWithInit from './foldWithInit.js'
+import merge from './merge.js'
+import map from './map.js'
+import toPojo from './toPojo.js'
 
-export default compose(Object.fromEntries)(toMapOf)
+export default iterable => foldWithInit(merge)({})(map(toPojo)(iterable))

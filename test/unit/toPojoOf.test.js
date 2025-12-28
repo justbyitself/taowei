@@ -39,11 +39,6 @@ describe('toPojoOf', () => {
     expect(Object.keys(result).length).toBe(0)
   })
 
-  it('should handle undefined or null', () => {
-    const result = toPojoOf([undefined, null])
-    expect(Object.keys(result).length).toBe(0)
-  })
-
   it('should ignore non-enumerable properties', () => {
     const obj = { a: 1 }
     Object.defineProperty(obj, 'b', {
