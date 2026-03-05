@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import values from '../../src/values.js'
+import { values } from '#taowei'
 
 describe('values', () => {
   it('returns values from a map', () => {

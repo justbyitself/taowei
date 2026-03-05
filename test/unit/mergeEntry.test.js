@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import mergeEntry from '../../src/mergeEntry.js'
+import { mergeEntry } from '#taowei'
 
 describe('mergeEntry', () => {
   it('merges simple entry to object', () => {

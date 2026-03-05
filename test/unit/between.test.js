@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import between from '../../src/between.js'
+import { between } from '#taowei'
 
 describe('between', () => {
   it('returns a function that wraps text with pre and post strings', () => {

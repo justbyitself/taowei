@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import enumFrom from '../../src/enumFrom.js' // Ensure the path is correct
+import { enumFrom } from '#taowei' // Ensure the path is correct
 
 describe('enumFrom', () => {
   it('generates an infinite iterable starting from 1', () => {

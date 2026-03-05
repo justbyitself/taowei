@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import isNotEqualTo from '../../src/isNotEqualTo.js'
+import { isNotEqualTo } from '#taowei'
 
 describe('isNotEqualTo', () => {
   it('returns false for strictly equal values', () => {

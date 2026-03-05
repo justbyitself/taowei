@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import isDivisibleBy from '../../src/isDivisibleBy.js'
+import { isDivisibleBy } from '#taowei'
 
 describe('isDivisibleBy', () => {
   it('returns true when value is divisible by divisor', () => {

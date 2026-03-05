@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import max from '../../src/max.js'
+import { max } from '#taowei'
 
 describe('max', () => {
   it('returns a function when given one argument', () => {

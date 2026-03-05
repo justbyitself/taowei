@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import isBoolean from '../../src/isBoolean.js'
+import { isBoolean } from '#taowei'
 
 describe('isBoolean', () => {
   it('returns true for booleans', () => {

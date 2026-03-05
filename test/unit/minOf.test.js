@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import minOf from '../../src/minOf.js'
+import { minOf } from '#taowei'
 
 describe('minOf', () => {
   it('returns the minimum of several numbers', () => {

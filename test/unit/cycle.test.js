@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { cycle } from '../../src/index.js'
+import { cycle } from '#taowei'
 
 describe('cycle', () => {
   it('should cycle through the iterator', () => {

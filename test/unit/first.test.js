@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import first from '../../src/first.js'
+import { first } from '#taowei'
 
 describe('first (value, undefined on empty)', () => {
   it('returns the first element of an array', () => {

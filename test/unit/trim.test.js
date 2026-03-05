@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import trim from '../../src/trim.js'
+import { trim } from '#taowei'
 
 describe('trim', () => {
   it('trims whitespace from both ends of a string', () => {

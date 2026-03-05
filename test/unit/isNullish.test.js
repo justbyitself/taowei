@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { isNullish } from '../../src/index.js'
+import { isNullish } from '#taowei'
 
 describe('isNullish', () => {
   it('true for null or undefined, false otherwise', () => {

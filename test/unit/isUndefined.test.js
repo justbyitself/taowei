@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import isUndefined from '../../src/isUndefined.js'
+import { isUndefined } from '#taowei'
 
 describe('isUndefined', () => {
   it('returns true only for undefined, false for other values', () => {

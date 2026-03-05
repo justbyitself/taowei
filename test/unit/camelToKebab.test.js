@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import camelToKebab from '../../src/camelToKebab.js'
+import { camelToKebab } from '#taowei'
 
 describe('camelToKebab', () => {
   it('converts simple camelCase to kebab-case', () => {

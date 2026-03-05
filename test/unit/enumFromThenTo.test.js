@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import enumFromThenTo from '../../src/enumFromThenTo.js'
+import { enumFromThenTo } from '#taowei'
 
 describe('enumFromThenTo', () => {
   it('generates an increasing range with step 1 (1,2..5)', () => {

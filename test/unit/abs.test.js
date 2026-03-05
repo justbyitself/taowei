@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import abs from '../../src/abs.js'
+import { abs } from '#taowei'
 
 describe('abs', () => {
   it('returns positive for positive numbers', () => {

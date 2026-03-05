@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import isEqualTo from '../../src/isEqualTo.js'
+import { isEqualTo } from '#taowei'
 
 describe('isEqualTo', () => {
   it('returns true for strictly equal values', () => {

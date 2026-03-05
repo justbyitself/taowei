@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import last from '../../src/last.js'
+import { last } from '#taowei'
 
 describe('last', () => {
   it('returns the last element of an array', () => {

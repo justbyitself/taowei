@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import min from '../../src/min.js'
+import { min } from '#taowei'
 
 describe('min', () => {
   it('returns a function when given one argument', () => {

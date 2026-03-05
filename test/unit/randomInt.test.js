@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import randomInt from '../../src/randomInt.js'
+import { randomInt } from '#taowei'
 
 describe('randomInt', () => {
   it('throws if min is not integer', () => {

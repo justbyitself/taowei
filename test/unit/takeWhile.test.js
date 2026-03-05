@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import takeWhile from '../../src/takeWhile.js'
+import { takeWhile } from '#taowei'
 
 describe('takeWhile', () => {
   it('takes elements while the condition is true', () => {

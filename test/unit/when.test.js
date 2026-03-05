@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
-import when from '../../src/when.js'
-import whenElse from '../../src/whenElse.js'
-import id from '../../src/id.js'
+import { when } from '#taowei'
+import { whenElse } from '#taowei'
+import { id } from '#taowei'
 
 describe('when', () => {
   it('applies fn when predicate is true (predicate boolean)', () => {

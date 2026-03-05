@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import has from '../../src/has.js'
+import { has } from '#taowei'
 
 describe('has', () => {
   it('checks object properties', () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import isInRange from '../../src/isInRange.js'
+import { isInRange } from '#taowei'
 
 describe('isInRange', () => {
   it('returns a function that tests inclusive range membership', () => {

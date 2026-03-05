@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import sub from '../../src/sub.js'
+import { sub } from '#taowei'
 
 describe('sub', () => {
   it('returns a function when given one argument', () => {

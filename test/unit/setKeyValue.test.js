@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { setKeyValue } from '../../src/index.js'
+import { setKeyValue } from '#taowei'
 
 describe('setKeyValue', () => {
   it('should set a key-value pair in a map', () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import reject from '../../src/reject.js'
+import { reject } from '#taowei'
 
 describe('reject', () => {
   it('returns all elements if none are rejected', () => {

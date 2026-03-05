@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import flip from '../../src/flip.js'
+import { flip } from '#taowei'
 
 describe('flip', () => {
   it('returns a function that flips arguments of a curried function', () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import forEach from '../../src/forEach.js'
+import { forEach } from '#taowei'
 
 describe('forEach', () => {
   it('should call the function for each element in an array', () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import succ from '../../src/succ.js'
+import { succ } from '#taowei'
 
 describe('succ', () => {
   it('is a function that returns successor of a number', () => {

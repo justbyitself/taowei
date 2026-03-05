@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import not from '../../src/not.js'
+import { not } from '#taowei'
 
 describe('not', () => {
   it('inverts a predicate result for a single value', () => {

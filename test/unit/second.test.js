@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import second from '../../src/second.js'
+import { second } from '#taowei'
 
 describe('second', () => {
   it('returns the second element of an array', () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import isOdd from '../../src/isOdd.js'
+import { isOdd } from '#taowei'
 
 describe('isOdd', () => {
   it('returns true for odd numbers', () => {

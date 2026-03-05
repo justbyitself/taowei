@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import find from '../../src/find.js'
+import { find } from '#taowei'
 
 describe('find', () => {
   it('returns the first element matching predicate', () => {

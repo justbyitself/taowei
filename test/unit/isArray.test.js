@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import isArray from '../../src/isArray.js'
+import { isArray } from '#taowei'
 
 describe('isArray', () => {
   it('returns true for arrays', () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import foldWithInit from '../../src/foldWithInit.js'
+import { foldWithInit } from '#taowei'
 
 describe('foldWithInit', () => {
   it('sums numbers with initial value', () => {

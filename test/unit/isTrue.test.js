@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { isTrue } from '../../src/index.js'
+import { isTrue } from '#taowei'
 
 describe('isTrue', () => {
   it('returns true only for strict true', () => {

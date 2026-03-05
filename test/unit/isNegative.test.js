@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { isNegative } from '../../src/index.js'
+import { isNegative } from '#taowei'
 
 describe('isNegative', () => {
   it('returns true for numbers less than 0 and false otherwise', () => {

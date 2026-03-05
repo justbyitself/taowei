@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 
-import pick from '../../src/pick.js'
-import toReusable from '../../src/toReusable.js'
+import { pick } from '#taowei'
+import { toReusable } from '#taowei'
 
 describe('pick', () => {
   it('returns undefined with empty iterable', () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import enumFromThen from '../../src/enumFromThen.js'
+import { enumFromThen } from '#taowei'
 
 describe('enumFromThen', () => {
   it('generates an infinite iterable starting 1 then 2 (step 1)', () => {

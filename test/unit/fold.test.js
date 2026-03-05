@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import fold from '../../src/fold.js'
+import { fold } from '#taowei'
 
 describe('fold', () => {
   it('reduces and iterable without initial value', () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { isFunction } from '../../src/index.js'
+import { isFunction } from '#taowei'
 
 describe('isFunction', () => {
   it('should return true for functions', () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import tryCatch from '../../src/tryCatch.js'
+import { tryCatch } from '#taowei'
 
 describe('tryCatch (currified, forwards args, catch receives (err, ...args))', () => {
   it('returns the result of try callback on success', () => {

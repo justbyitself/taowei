@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import filter from '../../src/filter.js'
+import { filter } from '#taowei'
 
 describe('filter', () => {
   it('returns an empty iterable if no elements match', () => {

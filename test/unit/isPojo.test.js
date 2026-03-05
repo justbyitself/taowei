@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { isPojo } from '../../src/index.js'
+import { isPojo } from '#taowei'
 
 describe('isPojo', () => {
   it('should return true for a plain object', () => {

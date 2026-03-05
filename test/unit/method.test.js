@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import method from '../../src/method.js'
+import { method } from '#taowei'
 
 describe('method', () => {
   it('extracts a method with its context', () => {

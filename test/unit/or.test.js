@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import or from '../../src/or.js'
+import { or } from '#taowei'
 
 describe('or', () => {
   it('returns true if first predicate is true', () => {

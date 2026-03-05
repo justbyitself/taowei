@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { toIterable } from '../../src/index.js'
+import { toIterable } from '#taowei'
 
 describe('toIterable', () => {
   it('should return the same iterable if input is already an iterable', () => {

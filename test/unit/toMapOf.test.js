@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { toMapOf } from '../../src/index.js'
+import { toMapOf } from '#taowei'
 
 describe('toMapOf', () => {
   it('should merge POJOs', () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import zipOf from '../../src/zipOf.js'
+import { zipOf } from '#taowei'
 
 describe('zipOf', () => {
   it('zips multiple arrays', () => {

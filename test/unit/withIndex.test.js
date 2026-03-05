@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 
-import withIndex from '../../src/withIndex.js'
+import { withIndex } from '#taowei'
 
 describe('withIndex', () => {
   it('should add index to a simple array', () => {

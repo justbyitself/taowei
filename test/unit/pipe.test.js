@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import pipe from '../../src/pipe.js'
+import { pipe } from '#taowei'
 
 describe('pipe', () => {
   it('pipes functions left-to-right', () => {

@@ -1,1 +1,0 @@
-export default pre => text => `${pre}${text}`

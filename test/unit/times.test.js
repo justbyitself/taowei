@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import times from '../../src/times.js'
+import { times } from '#taowei'
 
 describe('times', () => {
   it('returns an iterable with the specified number of function calls', () => {

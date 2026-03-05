@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import mod from '../../src/mod.js'
+import { mod } from '#taowei'
 
 describe('mod', () => {
   it('returns a function when given one argument', () => {

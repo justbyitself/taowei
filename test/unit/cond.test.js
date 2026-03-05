@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { cond } from '../../src/index.js'
+import { cond } from '#taowei'
 
 describe('cond', () => {
   it('should return the result of the matching function predicate', () => {

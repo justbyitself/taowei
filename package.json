@@ -1,6 +1,6 @@
 {
   "name": "taowei",
-  "version": "0.2.9",
+  "version": "0.3.0",
   "description": "Functional, iterable-focused library",
   "author": "justbyitself",
   "email": "justbyitself@proton.me",
@@ -28,6 +28,10 @@
     "lint": "eslint \"{src,test}/**/*.js\"",
     "lint:fix": "eslint --fix \"{src,test}/**/*.js\"",
     "pretest": "npm run lint"
+  },
+  "imports": {
+    "#taowei": "./src/index.js",
+    "#internal/*.js": "./src/internal/*.js"
   },
   "devDependencies": {
     "@vitest/coverage-v8": "^4.0.16",

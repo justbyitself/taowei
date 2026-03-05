@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import enumFromTo from '../../src/enumFromTo.js'
+import { enumFromTo } from '#taowei'
 
 describe('enumFromTo', () => {
   it('generates a range from 1 to 5', () => {

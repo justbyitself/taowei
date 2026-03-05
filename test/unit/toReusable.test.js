@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import toReusable from '../../src/toReusable.js'
+import { toReusable } from '#taowei'
 
 describe('toReusable', () => {
   it('converts a generator function into a reusable iterable', () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import every from '../../src/every.js'
+import { every } from '#taowei'
 
 describe('every', () => {
   it('returns true when all elements match across mixed inputs', () => {

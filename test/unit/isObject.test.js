@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { isObject } from '../../src/index.js'
+import { isObject } from '#taowei'
 
 describe('isObject', () => {
   it('should return true for objects', () => {

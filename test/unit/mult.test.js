@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import mult from '../../src/mult.js'
+import { mult } from '#taowei'
 
 describe('mult', () => {
   it('returns a function when given one argument', () => {

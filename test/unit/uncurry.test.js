@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import uncurry from '../../src/uncurry.js'
+import { uncurry } from '#taowei'
 
 describe('uncurry', () => {
   it('returns a function that accepts two arguments', () => {

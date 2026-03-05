@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import and from '../../src/and.js'
+import { and } from '#taowei'
 
 describe('and (curried)', () => {
   it('returns true only if both predicates are true', () => {

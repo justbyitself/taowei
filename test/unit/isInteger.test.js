@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import isInteger from '../../src/isInteger.js'
+import { isInteger } from '#taowei'
 
 describe('isInteger', () => {
   it('returns true for integer numbers', () => {

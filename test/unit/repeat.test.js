@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { repeat } from '../../src/index.js'
+import { repeat } from '#taowei'
 
 describe('repeat function', () => {
   it('should return an iterable that yields the same value indefinitely', () => {

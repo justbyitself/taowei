@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { isString } from '../../src/index.js'
+import { isString } from '#taowei'
 
 describe('isString', () => {
   it('true for strings, false otherwise', () => {

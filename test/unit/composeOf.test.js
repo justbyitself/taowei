@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import composeOf from '../../src/composeOf.js'
+import { composeOf } from '#taowei'
 
 describe('composeOf', () => {
   it('composes functions left-to-right', () => {

@@ -1,0 +1,1 @@
+export default x => y => Math.floor(y / x)

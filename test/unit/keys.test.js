@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import keys from '../../src/keys.js'
+import { keys } from '#taowei'
 
 describe('keys', () => {
   it('returns keys from a map', () => {

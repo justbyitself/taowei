@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { singleton } from '../../src/index.js'
+import { singleton } from '#taowei'
 
 describe('singleton', () => {
   it('returns an iterable with a single value', () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import cartesian from '../../src/cartesian.js'
+import { cartesian } from '#taowei'
 
 describe('cartesian function (curried)', () => {
   it('should produce pairs for two iterables', () => {

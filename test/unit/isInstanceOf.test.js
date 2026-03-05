@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import isInstanceOf from '../../src/isInstanceOf.js'
+import { isInstanceOf } from '#taowei'
 
 describe('isInstanceOf', () => {
   it('returns a function that tests instanceof', () => {

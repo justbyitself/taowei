@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import isEmpty from '../../src/isEmpty.js'
+import { isEmpty } from '#taowei'
 
 describe('isEmpty', () => {
   it('returns true for empty iterables', () => {

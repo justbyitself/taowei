@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import map from '../../src/map.js'
+import { map } from '#taowei'
 
 describe('map', () => {
   it('maps over mixed iterables', () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import get from '../../src/get.js'
+import { get } from '#taowei'
 
 describe('get', () => {
   it('retrieves object properties', () => {

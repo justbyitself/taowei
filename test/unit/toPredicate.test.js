@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { toPredicate } from '../../src/index.js'
+import { toPredicate } from '#taowei'
 
 describe('toPredicate', () => {
   it('returns the input if it is a function', () => {

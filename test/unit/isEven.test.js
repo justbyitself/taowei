@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import isEven from '../../src/isEven.js'
+import { isEven } from '#taowei'
 
 describe('isEven', () => {
   it('returns true for even numbers', () => {

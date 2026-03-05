@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import sum from '../../src/sum.js'
+import { sum } from '#taowei'
 
 describe('sum', () => {
   it('sums simple numeric arguments of an iterable', () => {

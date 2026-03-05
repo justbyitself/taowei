@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import whenElse from '../../src/whenElse.js'
+import { whenElse } from '#taowei'
 
 describe('whenElse', () => {
   it('returns ifTruthy value when predicate is true (predicate boolean)', () => {

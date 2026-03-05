@@ -1,0 +1,1 @@
+export default pre => post => text => `${pre}${text}${post}`

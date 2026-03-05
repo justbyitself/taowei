@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import some from '../../src/some.js'
+import { some } from '#taowei'
 
 describe('some', () => {
   it('returns true if at least one element matches across mixed inputs', () => {

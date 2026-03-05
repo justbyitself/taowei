@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import includes from '../../src/includes.js'
+import { includes } from '#taowei'
 
 describe('includes', () => {
   const animals = ['cat', 'dog', 'bat']

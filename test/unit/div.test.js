@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import div from '../../src/div.js'
+import { div } from '#taowei'
 
 describe('div', () => {
   it('returns a function when given one argument', () => {

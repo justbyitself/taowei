@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import maxOf from '../../src/maxOf.js'
+import { maxOf } from '#taowei'
 
 describe('maxOf', () => {
   it('returns the maximum of several numbers', () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import isLooselyEqualTo from '../../src/isLooselyEqualTo.js'
+import { isLooselyEqualTo } from '#taowei'
 
 describe('isLooselyEqualTo', () => {
   it('returns a function that performs == comparison', () => {

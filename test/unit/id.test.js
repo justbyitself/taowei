@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { id } from '../../src/index.js'
+import { id } from '#taowei'
 
 describe('id function', () => {
   it('should return the same value it receives', () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { withPrevious } from '../../src/index.js'
+import { withPrevious } from '#taowei'
 
 describe('withPrevious', () => {
   it('generates values based on the provided iterable', () => {

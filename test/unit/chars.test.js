@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import chars from '../../src/chars.js'
+import { chars } from '#taowei'
 
 describe('chars', () => {
   it('iterates characters', () => {

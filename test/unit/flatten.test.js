@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { flatten } from '../../src/index.js'
+import { flatten } from '#taowei'
 
 describe('flatten', () => {
   it('should flatten a nested array with depth 1', () => {

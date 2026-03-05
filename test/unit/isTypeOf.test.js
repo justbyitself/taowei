@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import isTypeOf from '../../src/isTypeOf.js'
+import { isTypeOf } from '#taowei'
 
 describe('isTypeOf', () => {
   it('returns a function that tests typeof equality', () => {

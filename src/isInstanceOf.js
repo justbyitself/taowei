@@ -1,1 +1,0 @@
-export default constructor => object => object instanceof constructor

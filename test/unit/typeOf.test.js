@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import typeOf from '../../src/typeOf.js'
+import { typeOf } from '#taowei'
 
 describe('typeOf', () => {
   it('returns a string describing the type (like typeof)', () => {

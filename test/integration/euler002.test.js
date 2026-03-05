@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { withPrevious, takeWhile, isLesserThanOrEqualTo as lte, 
-  repeat, sum, filter, concat, isEven } from '../../src/index.js'
+  repeat, sum, filter, concat, isEven } from '#taowei'
 
 /*
   Project Euler #2: Even Fibonacci Numbers

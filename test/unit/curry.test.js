@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import curry from '../../src/curry.js'
+import { curry } from '#taowei'
 
 describe('curry', () => {
   it('returns a function that takes one argument and returns another function', () => {

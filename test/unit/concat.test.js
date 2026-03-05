@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { concat } from '../../src/index.js'
+import { concat } from '#taowei'
 
 describe('concat', () => {
   it('should flatten a nested array with depth 1', () => {

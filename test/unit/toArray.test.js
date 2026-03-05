@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import toArray from '../../src/toArray.js'
+import { toArray } from '#taowei'
 
 describe('toArray', () => {
   it('converts an array-like iterable to a real array', () => {

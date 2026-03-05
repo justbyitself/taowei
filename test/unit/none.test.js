@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import none from '../../src/none.js'
+import { none } from '#taowei'
 
 describe('none', () => {
   it('returns true when no elements match across mixed inputs', () => {

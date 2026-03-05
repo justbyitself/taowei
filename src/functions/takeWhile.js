@@ -1,0 +1,10 @@
+import toReusable from '#internal/toReusable.js'
+
+export default predicate => iterable => toReusable(function* () {
+  for (const value of iterable) {
+    if (!predicate(value)) {
+      break
+    }
+    yield value
+  }
+})

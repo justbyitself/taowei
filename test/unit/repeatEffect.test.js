@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import repeatEffect from '../../src/repeatEffect.js'
+import { repeatEffect } from '#taowei'
 
 describe('repeatEffect', () => {
   it('returns an iterable that yields the result of calling the function', () => {

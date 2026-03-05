@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import zip from '../../src/zip.js'
+import { zip } from '#taowei'
 
 describe('zip', () => {
   it('zips two arrays', () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import toIterator from '../../src/toIterator.js'
+import { toIterator } from '#taowei'
 
 describe('toIterator', () => {
   it('returns the iterator of an array', () => {

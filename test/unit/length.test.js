@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import length from '../../src/length.js'
+import { length } from '#taowei'
 
 describe('length', () => {
   it('returns 0 for empty iterable', () => {

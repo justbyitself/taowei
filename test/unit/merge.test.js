@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import merge from '../../src/merge.js'
+import { merge } from '#taowei'
 
 describe('merge', () => {
   // POJO ↔ POJO

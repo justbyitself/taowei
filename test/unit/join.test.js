@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import join from '../../src/join.js'
+import { join } from '#taowei'
 
 describe('join', () => {
   it('joins array elements with separator', () => {

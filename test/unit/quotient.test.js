@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import quotient from '../../src/quotient.js'
+import { quotient } from '#taowei'
 
 describe('quotient', () => {
   it('returns a function when given one argument', () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import add from '../../src/add.js'
+import { add } from '#taowei'
 
 describe('add', () => {
   it('returns a function when given one argument', () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import isNull from '../../src/isNull.js'
+import { isNull } from '#taowei'
 
 describe('isNull', () => {
   it('returns true only for null and false for any other value', () => {

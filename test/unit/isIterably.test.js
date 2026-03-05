@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { isIterably } from '../../src/index.js'
+import { isIterably } from '#taowei'
 
 describe('isIterably', () => {
   it('should return false for null and undefined', () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { take } from '../../src/index.js'
+import { take } from '#taowei'
 
 describe('take', () => {
   it('returns the first n elements of an array as an iterator', () => {
